@@ -63,6 +63,15 @@ kubectx kind-kind
 
 `kubectx` will show the available contexts.
 
+
+## Usando quickstart kind
+
+https://knative.dev/docs/getting-started/quickstart-install/#install-the-knative-quickstart-plugin
+
+and
+
+https://knative.dev/docs/getting-started/first-service/
+
 ##### Some used links:
 
 https://knative.dev/docs/getting-started/quickstart-install/
