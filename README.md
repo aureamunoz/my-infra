@@ -15,6 +15,9 @@ From [this tutorial](https://knative.dev/blog/articles/set-up-a-local-knative-en
 ### Install Knative Serving
 ````shell
 kubectl apply --filename https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-crds.yaml
+````
+
+````shell
 kubectl apply --filename https://github.com/knative/serving/releases/download/knative-v1.0.0/serving-core.yaml
 ````
 
@@ -25,18 +28,19 @@ kubectl apply --filename kourier.yaml
 
 Then, run the following commands:
 ````shell
-
 kubectl patch configmap/config-network \
 --namespace knative-serving \
 --type merge \
 --patch '{"data":{"ingress-class":"kourier.ingress.networking.knative.dev"}}'
+````
 
+````shell
 kubectl patch configmap/config-domain \
 --namespace knative-serving \
 --type merge \
 --patch '{"data":{"127.0.0.1.sslip.io":""}}'
 
-````
+`````
 
 ### Deploying your first app
 
