@@ -46,8 +46,11 @@ kubectl patch configmap/config-domain \
 
 ````shell
 kubectl apply --filename service.yaml
-kubectl get ksvc
 ````
+
+`````shell
+kubectl get ksvc
+`````
 or 
 ````shell
 kn service list
