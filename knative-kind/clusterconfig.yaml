@@ -9,4 +9,3 @@ nodes:
       ## expose port 31443 of the node to port 443 on the host
     - containerPort: 31443
       hostPort: 443
-EOF

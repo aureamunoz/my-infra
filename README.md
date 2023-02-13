@@ -9,12 +9,5 @@ Install Kind following the [site instructions](https://kind.sigs.k8s.io/docs/use
 
 ### Create a cluster
 
-Create a Kubernetes cluster and set up an Ingress controller, either follows the instructions from [here](https://kind.sigs.k8s.io/docs/user/ingress/#create-cluster) or run the following command:
-
-````shell
-bash <(curl -s -L https://raw.githubusercontent.com/snowdrop/k8s-infra/main/kind/kind-reg-ingress.sh)
-````
-
-This script creates a Kubernetes cluster using kind tool and deploys a private docker registry and NGINX controller to route the traffic
-
-If you want to set up a Knative environnement jump to the [knative-kind instructions](./knative-kind/README.md).
+Now, you can create a cluster. If you want to set up a Knative environment jump to the [knative-kind instructions](./knative-kind/README.md).
+If you want just a regular kubernetes environment with an ingress controller to manage the traffic, jump to the [k8s-ingress-kind instructions](./k8s-ingress-kind/README.md).
